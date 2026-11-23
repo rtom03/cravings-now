@@ -1,10 +1,10 @@
-import { CreateOrderInput } from "../../types/order";
-import { prisma } from "../../utils/db";
-import { initializePaystackTransaction } from "../paystack/paystack";
-import { Prisma } from "../../generated/prisma/client";
+import { CreateOrderInput } from "../../types/order.js";
+import { prisma } from "../../utils/db.js";
+import { initializePaystackTransaction } from "../paystack/paystack.js";
+import { Prisma } from "../../generated/prisma/client.js";
 import { randomBytes, randomUUID, createHash } from "crypto";
-import { priceCart } from "../pricing";
-import { orderEvents } from "../../lib/orderEvents";
+import { priceCart } from "../pricing.js";
+import { orderEvents } from "../../lib/orderEvents.js";
 
 export async function createOrder(input: CreateOrderInput) {
   const key = input.idempotencyKey; // controller: req.header("Idempotency-Key")

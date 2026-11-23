@@ -1,9 +1,9 @@
 // import {
 //   upsertProductBranches,
 //   upsertProducts,
-// } from "../../controller/productController";
-// import { prisma } from "../../utils/db";
-import foodicsClient from "./client";
+// } from "../../controller/productController.js";
+// import { prisma } from "../../utils/db.js";
+import foodicsClient from "./client.js";
 
 //artificial syncing
 const KRISPY_KREME_CATEGORIES = [

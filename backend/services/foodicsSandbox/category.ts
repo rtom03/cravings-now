@@ -1,8 +1,8 @@
 // types/foodicsCategory.ts
 
-import foodicsClient from "../foodics/client";
-import foodicsClientSB from "../foodics/foodicsClientSB";
-import { toSandboxCategoryPayload } from "./map/categoryMapper";
+import foodicsClient from "../foodics/client.js";
+import foodicsClientSB from "../foodics/foodicsClientSB.js";
+import { toSandboxCategoryPayload } from "./map/categoryMapper.js";
 
 // The exact shape Foodics accepts for POST /categories
 export interface FoodicsCategoryCreatePayload {

@@ -1,15 +1,15 @@
 import express from "express";
-import { authenticate, authorize } from "../../middleware/authenticate";
-import { getBranch, getBranches } from "../../controller/branchController";
+import { authenticate, authorize } from "../../middleware/authenticate.js";
+import { getBranch, getBranches } from "../../controller/branchController.js";
 import {
   getBranchByGroupName,
   getGroups,
   getProductsByGroupName,
-} from "../../controller/groupController";
+} from "../../controller/groupController.js";
 import {
   createAdmin,
   loginAdmin,
-} from "../../controller/admin/admin.authController";
+} from "../../controller/admin/admin.authController.js";
 
 const adminRoutes = express.Router();
 

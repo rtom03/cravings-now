@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { prisma } from "../utils/db";
-import { syncBranches } from "../services/foodics/branches.service";
-import { FoodicsBranch } from "../types/index.types";
+import { syncBranches } from "../services/foodics/branches.service.js";
+import { FoodicsBranch } from "../types/index.types.js";
+import { prisma } from "../utils/db.js";
 
 export type IDParams = {
   id: string;

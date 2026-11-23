@@ -3,7 +3,7 @@
 import {
   FoodicsProductCreatePayload,
   DBProductCreatePayload,
-} from "../products";
+} from "../products.js";
 
 function generateUniqueSku(existingSku: string): string {
   const suffix = Math.random().toString(36).slice(2, 8).toUpperCase();

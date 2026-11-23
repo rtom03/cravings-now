@@ -1,5 +1,5 @@
 import express from "express";
-import { authenticate, authorize } from "../../middleware/authenticate";
+import { authenticate, authorize } from "../../middleware/authenticate.js";
 import {
   createAddress,
   customerLogin,
@@ -7,7 +7,7 @@ import {
   getAddresses,
   meVerified,
   updateAddress,
-} from "../../controller/customerController";
+} from "../../controller/customerController.js";
 
 const customerRoutes = express.Router();
 

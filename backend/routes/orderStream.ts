@@ -1,7 +1,7 @@
 // routes/orderStream.ts
 import { Router } from "express";
-import { orderEvents } from "../lib/orderEvents";
-import { authenticate, authorize } from "../middleware/authenticate";
+import { orderEvents } from "../lib/orderEvents.js";
+import { authenticate, authorize } from "../middleware/authenticate.js";
 
 const streamRoute = Router();
 

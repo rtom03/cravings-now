@@ -1,5 +1,5 @@
-import { upsertCategory } from "../../controller/categoryController";
-import foodicsClient from "./client";
+import { upsertCategory } from "../../controller/categoryController.js";
+import foodicsClient from "./client.js";
 
 export const getCategoriesFromFoodics = async () => {
   const { data: firstPage } = await foodicsClient.get("/categories?page=1");

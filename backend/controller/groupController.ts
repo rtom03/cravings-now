@@ -1,20 +1,20 @@
 import { Request, Response } from "express";
-import { prisma } from "../utils/db";
-import { IDParams } from "./branchController";
-import { Product } from "../types/group";
-import { syncGrpEp } from "../syncFromFoodics/group";
+import { prisma } from "../utils/db.js";
+import { IDParams } from "./branchController.js";
+import { Product } from "../types/group.js";
+import { syncGrpEp } from "../syncFromFoodics/group.js";
 
-// import { syncCategoriesLiveToSandbox } from "../services/foodicsSandbox/category";
-// import { syncProductLiveToSandbox } from "../services/foodicsSandbox/products";
-// import { syncAllProductModifiers } from "../services/foodics/modifier.service";
-// import { appendCatIdGrpPrd } from "../services/foodics/groups.service";
-// import { syncCategories } from "../services/foodics/categories.service";
-// import { syncSandboxIdsByName } from "../services/sandBox/productToDB";
-// import { syncBranches } from "../services/foodics/branches.service";
-// import { syncModifierOptionsForModifier } from "../services/sandBox/options";
-import { str } from "../services/order/order.validation";
-// import { syncAllProductModifiers } from "../services/foodics/modifier.service";
-// import { syncBranches } from "../services/foodics/branches.service";
+// import { syncCategoriesLiveToSandbox } from "../services/foodicsSandbox/category.js";
+// import { syncProductLiveToSandbox } from "../services/foodicsSandbox/products.js";
+// import { syncAllProductModifiers } from "../services/foodics/modifier.service.js";
+// import { appendCatIdGrpPrd } from "../services/foodics/groups.service.js";
+// import { syncCategories } from "../services/foodics/categories.service.js";
+// import { syncSandboxIdsByName } from "../services/sandBox/productToDB.js";
+// import { syncBranches } from "../services/foodics/branches.service.js";
+// import { syncModifierOptionsForModifier } from "../services/sandBox/options.js";
+import { str } from "../services/order/order.validation.js";
+// import { syncAllProductModifiers } from "../services/foodics/modifier.service.js";
+// import { syncBranches } from "../services/foodics/branches.service.js";
 
 const mapProduct = (product: any): Product => {
   return {

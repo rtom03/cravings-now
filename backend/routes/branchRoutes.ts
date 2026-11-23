@@ -1,6 +1,6 @@
 import express from "express";
-import { getBranch, getBranches } from "../controller/branchController";
-import { authenticate, authorize } from "../middleware/authenticate";
+import { getBranch, getBranches } from "../controller/branchController.js";
+import { authenticate } from "../middleware/authenticate.js";
 
 const branchRoutes = express.Router();
 

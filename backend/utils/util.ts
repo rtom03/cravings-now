@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { prisma } from "./db";
+import { prisma } from "./db.js";
 
 const filePath = path.join(process.cwd(), "synced-modifier-products.jsonl");
 

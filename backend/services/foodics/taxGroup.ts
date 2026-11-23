@@ -1,4 +1,4 @@
-import foodicsClient from "./client";
+import foodicsClient from "./client.js";
 
 export const getTaxGroupFromFoodics = async () => {
   const { data } = await foodicsClient.get(

@@ -1,7 +1,7 @@
 // foodics/foodicsClientSB.ts
 import axios from "axios";
 import axiosRetry from "axios-retry";
-import { sleep } from "../../utils/sleep";
+import { sleep } from "../../utils/sleep.js";
 
 class RateLimiter {
   private timestamps: number[] = [];

@@ -1,7 +1,7 @@
-import { Actor, detailInclude, scoped } from "../../controller/orderController";
-import { Prisma } from "../../generated/prisma/client";
-import { prisma } from "../../utils/db";
-import { ListOrdersQuery, OrderError } from "./order.validation";
+import { Actor, detailInclude, scoped } from "../../controller/orderController.js";
+import { Prisma } from "../../generated/prisma/client.js";
+import { prisma } from "../../utils/db.js";
+import { ListOrdersQuery, OrderError } from "./order.validation.js";
 
 export async function listOrders(q: ListOrdersQuery, actor: Actor) {
   const where: Prisma.OrderWhereInput = {

@@ -1,5 +1,5 @@
 import express from "express";
-import { syncCatEp } from "../controller/categoryController";
+import { syncCatEp } from "../controller/categoryController.js";
 
 const categoryRoutes = express.Router();
 

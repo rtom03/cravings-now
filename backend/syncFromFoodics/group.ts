@@ -1,6 +1,6 @@
-import { syncGroupProducts } from "../services/foodics/groups.service";
-import { FoodicsGroupsProducts } from "../types/index.types";
-import { prisma } from "../utils/db";
+import { syncGroupProducts } from "../services/foodics/groups.service.js";
+import { FoodicsGroupsProducts } from "../types/index.types.js";
+import { prisma } from "../utils/db.js";
 
 interface FdGroup {
   id: string;

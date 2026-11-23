@@ -1,6 +1,6 @@
 // jobs/reactivateProducts.ts
 import cron from "node-cron";
-import { prisma } from "../utils/db";
+import { prisma } from "../utils/db.js";
 
 // runs every minute — adjust cadence to how precise you need the reactivation to be
 cron.schedule("* * * * *", async () => {

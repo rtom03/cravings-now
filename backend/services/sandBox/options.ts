@@ -1,10 +1,10 @@
-import { prisma } from "../../utils/db";
-import foodicsClientSB from "../foodics/foodicsClientSB";
+import { prisma } from "../../utils/db.js";
+import foodicsClientSB from "../foodics/foodicsClientSB.js";
 import {
   DbModifierOption,
   FoodicsModifierOptionPayload,
   toSandboxModifierOptionPayload,
-} from "../foodicsSandbox/map/foodicsMapperOptions";
+} from "../foodicsSandbox/map/foodicsMapperOptions.js";
 export interface ModifierOptionSyncResult {
   dbOptionId: string;
   optionName: string;

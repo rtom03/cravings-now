@@ -3,11 +3,11 @@ import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 import express from "express";
 import morgan from "morgan";
-import { connectDB } from "./utils/db";
-import routes from "./routes";
-import { paystackWebhookHandler } from "./controller/paystackWebhookHandler";
-// import "./jobs/reactivateProduct";
-// import "./jobs/scheduleFoodicsSync";
+import { connectDB } from "./utils/db.js";
+import routes from "./routes/index.js";
+import { paystackWebhookHandler } from "./controller/paystackWebhookHandler.js";
+// import "./jobs/reactivateProduct.js";
+// import "./jobs/scheduleFoodicsSync.js";
 dotenv.config();
 
 connectDB();

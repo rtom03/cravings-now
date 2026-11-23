@@ -1,9 +1,9 @@
 import { OAuth2Client } from "google-auth-library";
-import { env } from "../config/env";
-import createJWT from "../utils";
-import { prisma } from "../utils/db";
+import { env } from "../config/env.js";
+import createJWT from "../utils/index.js";
+import { prisma } from "../utils/db.js";
 import { Request, Response } from "express";
-import { IDParams } from "./branchController";
+import { IDParams } from "./branchController.js";
 
 export const client = new OAuth2Client(env.google.client_id);
 

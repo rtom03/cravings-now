@@ -1,7 +1,7 @@
 // workers/foodicsSyncWorker.ts
-import { SyncStatus } from "../generated/prisma/enums";
-import { buildFoodicsOrderPayload } from "../services/foodicsPayload";
-import { prisma } from "../utils/db";
+import { SyncStatus } from "../generated/prisma/enums.js";
+import { buildFoodicsOrderPayload } from "../services/foodicsPayload.js";
+import { prisma } from "../utils/db.js";
 
 const FOODICS_API_BASE = process.env.FOODICS_API_BASE!;
 const FOODICS_API_TOKEN = process.env.FOODICS_API_TOKEN!;

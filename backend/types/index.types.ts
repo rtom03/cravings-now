@@ -4,7 +4,7 @@ type UserResponse = {
 };
 
 import { InputJsonValue, JsonNullClass } from "@prisma/client/runtime/client";
-import { NullableJsonNullValueInput } from "../generated/prisma/internal/prismaNamespace";
+import { NullableJsonNullValueInput } from "../generated/prisma/internal/prismaNamespace.js";
 
 type FoodicsBranchPivot = {
   price: number | null;

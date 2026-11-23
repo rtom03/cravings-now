@@ -1,12 +1,12 @@
 import express from "express";
-import { authenticate, authorize } from "../middleware/authenticate";
+import { authenticate, authorize } from "../middleware/authenticate.js";
 import {
   getProductDetails,
   updateProduct,
   updateProductOption,
-} from "../controller/productController";
-import { getProducts } from "../controller/groupController";
-// import { syncGrpEp } from "../controller/groupController";
+} from "../controller/productController.js";
+import { getProducts } from "../controller/groupController.js";
+// import { syncGrpEp } from "../controller/groupController.js";
 
 const productsRoutes = express.Router();
 

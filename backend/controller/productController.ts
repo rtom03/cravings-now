@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { prisma } from "../utils/db";
-import { IDParams } from "./branchController";
-import { Prisma } from "../generated/prisma/client";
+import { prisma } from "../utils/db.js";
+import { IDParams } from "./branchController.js";
+import { Prisma } from "../generated/prisma/client.js";
 
 const getProductDetails = async (req: Request<IDParams>, res: Response) => {
   const { id } = req.params;

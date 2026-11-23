@@ -1,4 +1,4 @@
-import { OrderStatus, OrderType } from "../../generated/prisma/enums";
+import { OrderStatus, OrderType } from "../../generated/prisma/enums.js";
 
 export class OrderError extends Error {
   constructor(

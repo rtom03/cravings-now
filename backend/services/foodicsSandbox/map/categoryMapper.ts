@@ -1,4 +1,4 @@
-import { FoodicsCategoryCreatePayload, FoodicsLiveCategory } from "../category";
+import { FoodicsCategoryCreatePayload, FoodicsLiveCategory } from "../category.js";
 
 /**
  * Converts a live Foodics category into a valid sandbox CREATE payload.

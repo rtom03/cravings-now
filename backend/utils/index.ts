@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import { Response } from "express";
-import { AuthPayload } from "../types/index.types";
+import { AuthPayload } from "../types/index.types.js";
 
 dotenv.config();
 

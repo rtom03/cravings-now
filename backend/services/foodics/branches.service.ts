@@ -1,6 +1,6 @@
-import { FoodicsBranch } from "../../types/index.types";
-import { prisma } from "../../utils/db";
-import foodicsClient from "./client";
+import { FoodicsBranch } from "../../types/index.types.js";
+import { prisma } from "../../utils/db.js";
+import foodicsClient from "./client.js";
 
 export const getBranchesFromFoodics = async () => {
   const { data } = await foodicsClient.get("/branches");

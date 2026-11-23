@@ -1,12 +1,12 @@
 import { Request, Response } from "express";
-import { FoodicsCategoryRaw } from "../types/index.types";
-import { prisma } from "../utils/db";
-import { syncCategories } from "../services/foodics/categories.service";
+import { FoodicsCategoryRaw } from "../types/index.types.js";
+import { prisma } from "../utils/db.js";
+import { syncCategories } from "../services/foodics/categories.service.js";
 import {
   BN_CATEGORIES,
   KRISPY_KREME_CATEGORIES,
   SCOOPD_CATEGORIES,
-} from "../utils/util";
+} from "../utils/util.js";
 
 const syncCatEp = async (req: Request, res: Response) => {
   try {

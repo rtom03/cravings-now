@@ -1,25 +1,25 @@
 // controllers/order.controller.ts
 import { Request, Response } from "express";
-import { createOrder } from "../services/order/createOrderService";
-import { prisma } from "../utils/db";
-import { paystack } from "../services/paystack/paystack";
-import { markPaid } from "./paystackWebhookHandler";
-import { IDParams } from "./branchController";
-import { priceCart } from "../services/pricing";
+import { createOrder } from "../services/order/createOrderService.js";
+import { prisma } from "../utils/db.js";
+import { paystack } from "../services/paystack/paystack.js";
+import { markPaid } from "./paystackWebhookHandler.js";
+import { IDParams } from "./branchController.js";
+import { priceCart } from "../services/pricing.js";
 import {
   parseId,
   parseListQuery,
   parseReplaceBody,
   parseStatusBody,
   parseVoidBody,
-} from "../services/order/order.validation";
-import { listOrders } from "../services/order/getOrderService";
-import { Prisma } from "../generated/prisma/client";
+} from "../services/order/order.validation.js";
+import { listOrders } from "../services/order/getOrderService.js";
+import { Prisma } from "../generated/prisma/client.js";
 import {
   replaceOrder,
   updateStatus,
   voidOrder,
-} from "../services/order/updateOrderService";
+} from "../services/order/updateOrderService.js";
 
 // Roles that may act across every branch (adjust to your role names)
 const ALL_BRANCH_ROLES = ["ADMIN"];

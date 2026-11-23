@@ -1,8 +1,8 @@
 // controller/paystackWebhook.ts
 import crypto from "crypto";
 import { Request, Response } from "express";
-import { prisma } from "../utils/db";
-import { orderEvents } from "../lib/orderEvents";
+import { prisma } from "../utils/db.js";
+import { orderEvents } from "../lib/orderEvents.js";
 
 const PAYSTACK_TEST_SECRET_KEY = process.env.PAYSTACK_TEST_SECRET_KEY;
 

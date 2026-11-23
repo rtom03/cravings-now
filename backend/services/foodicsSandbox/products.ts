@@ -1,8 +1,8 @@
-import { prisma } from "../../utils/db";
-import { sleep } from "../../utils/sleep";
-import foodicsClient from "../foodics/client";
-import foodicsClientSB from "../foodics/foodicsClientSB";
-import { toSandboxCreatePayload } from "./map/foodicsMapperProducts";
+import { prisma } from "../../utils/db.js";
+import { sleep } from "../../utils/sleep.js";
+import foodicsClient from "../foodics/client.js";
+import foodicsClientSB from "../foodics/foodicsClientSB.js";
+import { toSandboxCreatePayload } from "./map/foodicsMapperProducts.js";
 
 export interface DBProductCreatePayload {
   name: string;

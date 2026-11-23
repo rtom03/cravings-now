@@ -1,8 +1,8 @@
-import { prisma } from "../../utils/db";
-import { OrderStatus, Prisma } from "../../generated/prisma/client";
-import { getOrder } from "./getOrderService";
-import { OrderError, ReplaceOrderBody } from "./order.validation";
-import { Actor, detailInclude, scoped } from "../../controller/orderController";
+import { prisma } from "../../utils/db.js";
+import { OrderStatus, Prisma } from "../../generated/prisma/client.js";
+import { getOrder } from "./getOrderService.js";
+import { OrderError, ReplaceOrderBody } from "./order.validation.js";
+import { Actor, detailInclude, scoped } from "../../controller/orderController.js";
 
 // Allowed status transitions. Terminal states have no exits.
 const TRANSITIONS: Record<OrderStatus, OrderStatus[]> = {

@@ -1,7 +1,7 @@
-import { prisma } from "../utils/db";
+import { prisma } from "../utils/db.js";
 import { Request, Response } from "express";
 import bcrypt from "bcryptjs";
-import createJWT from "../utils";
+import createJWT from "../utils/index.js";
 const SALT_ROUNDS = 12;
 
 export const signIn = async (req: Request, res: Response) => {

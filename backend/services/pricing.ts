@@ -1,8 +1,8 @@
-import { parsePrice } from "../lib/price";
-import { CreateOrderInput } from "../types/order";
-import { prisma } from "../utils/db";
-import { calculateProcessingFeeKobo } from "./chargeCalc";
-import { findNearestBranch } from "./locationServices";
+import { parsePrice } from "../lib/price.js";
+import { CreateOrderInput } from "../types/order.js";
+import { prisma } from "../utils/db.js";
+import { calculateProcessingFeeKobo } from "./chargeCalc.js";
+import { findNearestBranch } from "./locationServices.js";
 
 const toKobo = (naira: number) => Math.round(naira * 100);
 

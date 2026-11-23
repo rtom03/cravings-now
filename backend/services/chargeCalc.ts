@@ -1,4 +1,4 @@
-import { Charge } from "../generated/prisma/client";
+import { Charge } from "../generated/prisma/client.js";
 
 export function calculateProcessingFeeKobo(
   charge: Charge,

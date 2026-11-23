@@ -7,7 +7,7 @@ import {
   OrderCharge,
   OrderPayment,
   Branch,
-} from "../generated/prisma/client";
+} from "../generated/prisma/client.js";
 
 type FullOrder = Order & {
   products: (OrderProduct & { options: OrderProductOption[] })[];

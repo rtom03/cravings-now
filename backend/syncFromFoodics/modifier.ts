@@ -2,9 +2,9 @@ import {
   FoodicsModifier,
   FoodicsModifierOption,
   ProductModifierModifierOptionsProps,
-} from "../types/index.types";
-import { prisma } from "../utils/db";
-import { recordModifierProduct } from "../utils/util";
+} from "../types/index.types.js";
+import { prisma } from "../utils/db.js";
+import { recordModifierProduct } from "../utils/util.js";
 
 export async function syncProductModifiers(
   data: ProductModifierModifierOptionsProps,

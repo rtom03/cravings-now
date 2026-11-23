@@ -3,7 +3,7 @@ import type {
   PaystackCustomer,
   PaystackInitTransaction,
   PaystackInitResponse,
-} from "../../types/paystack";
+} from "../../types/paystack.js";
 
 const PAYSTACK_TEST_SECRET_KEY = process.env.PAYSTACK_TEST_SECRET_KEY;
 const CALL_BACK_URL = process.env.PAYSTACK_CALL_BACK_URL;

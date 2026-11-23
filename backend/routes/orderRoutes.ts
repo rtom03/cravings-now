@@ -1,12 +1,12 @@
 import express from "express";
-import { signIn } from "../controller/userController";
+import { signIn } from "../controller/userController.js";
 import {
   createOrderHandler,
   listOrdersHandler,
   paymentStatusHandler,
   quoteHandler,
-} from "../controller/orderController";
-import { authenticate, authorize } from "../middleware/authenticate";
+} from "../controller/orderController.js";
+import { authenticate, authorize } from "../middleware/authenticate.js";
 
 const orderRoute = express.Router();
 

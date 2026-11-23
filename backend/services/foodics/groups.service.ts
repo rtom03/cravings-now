@@ -1,11 +1,11 @@
-import { upsertGroup, upsertGroupProducts } from "../../syncFromFoodics/group";
-import { prisma } from "../../utils/db";
+import { upsertGroup, upsertGroupProducts } from "../../syncFromFoodics/group.js";
+import { prisma } from "../../utils/db.js";
 import {
   BN_CATEGORIES,
   // KRISPY_KREME_CATEGORIES,
   SCOOPD_CATEGORIES,
-} from "../../utils/util";
-import foodicsClient from "./client";
+} from "../../utils/util.js";
+import foodicsClient from "./client.js";
 
 // types/foodicsProduct.ts
 

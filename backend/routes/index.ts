@@ -1,13 +1,13 @@
 import express from "express";
-import branchRoutes from "./branchRoutes";
-import categoryRoutes from "./categoryRoute";
-import adminRoutes from "./admin/route";
-import storeRoutes from "./store/route";
-import productsRoutes from "./productsRoutes";
-import orderRoute from "./orderRoutes";
-import customerRoutes from "./customer/route";
-import streamRoute from "./orderStream";
-import groupRoutes from "./groupRoutes";
+import branchRoutes from "./branchRoutes.js";
+import categoryRoutes from "./categoryRoute.js";
+import adminRoutes from "./admin/route.js";
+import storeRoutes from "./store/route.js";
+import productsRoutes from "./productsRoutes.js";
+import orderRoute from "./orderRoutes.js";
+import customerRoutes from "./customer/route.js";
+import streamRoute from "./orderStream.js";
+import groupRoutes from "./groupRoutes.js";
 
 const routes = express.Router();
 

@@ -1,7 +1,7 @@
 import type { Request, Response } from "express";
 import bcrypt from "bcryptjs";
-import { prisma } from "../../utils/db";
-import createJWT from "../../utils";
+import { prisma } from "../../utils/db.js";
+import createJWT from "../../utils/index.js";
 
 const JWT_SECRET = process.env.JWT_SECRET;
 

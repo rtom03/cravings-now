@@ -1,5 +1,5 @@
-import { prisma } from "../../utils/db";
-import foodicsClientSB from "../foodics/foodicsClientSB";
+import { prisma } from "../../utils/db.js";
+import foodicsClientSB from "../foodics/foodicsClientSB.js";
 
 export const getProductsById = async () => {
   const { data } = await foodicsClientSB.get(

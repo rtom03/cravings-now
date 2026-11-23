@@ -1,7 +1,7 @@
-import { syncProductModifiers } from "../../syncFromFoodics/modifier";
-import { prisma } from "../../utils/db";
-import { getSyncedModifierProductIds } from "../../utils/util";
-import foodicsClient from "./client";
+import { syncProductModifiers } from "../../syncFromFoodics/modifier.js";
+import { prisma } from "../../utils/db.js";
+import { getSyncedModifierProductIds } from "../../utils/util.js";
+import foodicsClient from "./client.js";
 
 const getProductsFromFoodics = async (id: string) => {
   const data = await foodicsClient.get(`/products/${id}?include=modifiers`);
